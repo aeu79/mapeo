@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "Camp",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Yaiken Kaimak", "Cod": 2, "Orden": 16, "Fecha": null, "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7887962.095909534022212, -5675950.248861938714981 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Yolke", "Cod": 2, "Orden": 15, "Fecha": null, "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7866396.01915499940515, -5724361.41794896312058 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Tele", "Cod": 3, "Orden": 14, "Fecha": null, "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7917213.034685746766627, -5749700.6927231522277 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "valle del Deseado", "Cod": 5, "Orden": 10, "Fecha": null, "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7874427.046132611110806, -5877781.726417814381421 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Kink", "Cod": 3, "Orden": 12, "Fecha": "1865\/09\/22", "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7913933.453520669601858, -5809205.183671366423368 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Gegel Aike", "Cod": 5, "Orden": 13, "Fecha": "1865\/09\/27", "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7913830.320786722935736, -5797035.521065642125905 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "valle", "Cod": 5, "Orden": 11, "Fecha": null, "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7878360.801563031040132, -5874275.569367952644825 ] } },
+{ "type": "Feature", "properties": { "id": null, "Nombre": "Cañadon", "Cod": 5, "Orden": 17, "Fecha": null, "Descrip": null, "Fuente": "Musters", "Obs": null }, "geometry": { "type": "Point", "coordinates": [ -7900863.159435647539794, -5824967.549802824854851 ] } }
+]
+}

@@ -43,7 +43,7 @@ popup_dos = folium.Popup(iframe_dos, max_width=2650)
 # Ah, pero qué pesadilla. Ahora hay que asignarle esos popus a marcadores en el mapa.
 # Let's put the Popup on a marker, in the second map.
 
-folium.Marker([-46.7952743,-67.9582257], popup=popup,icon=folium.Icon(icon='home')).add_to(mapote)
+folium.Marker([-46.7952743,-67.9122257], popup=popup,icon=folium.Icon(icon='home')).add_to(mapote)
 folium.Marker([-46.7952743,-67.8582257], popup=popup_dos).add_to(mapote)
 
 # los mismo iframes se podrían reciclar para varios popups. Pero no se pueden reciclar los popus (ya lo probé),
@@ -58,7 +58,7 @@ popup5 = folium.Popup(iframe, max_width=2650)
 # íconos disponibles (si usar fuentes externas): https://getbootstrap.com/docs/3.3/components/#glyphicons-glyphs
 folium.Marker([-46.4952743,-67.3582257], popup=popup5,icon=folium.Icon(color='green')).add_to(mapote)
 popup6 = folium.Popup(iframe, max_width=2650)
-folium.Marker([-46.5952743,-67.6582257], popup=popup6,icon=folium.Icon(color='red')).add_to(mapote)
+folium.Marker([-46.8002,-67.9571], popup=popup6,icon=folium.Icon(color='red')).add_to(mapote)
 # ahora reuso el iframe_dos
 popup7 = folium.Popup(iframe_dos, max_width=2650)
 folium.Marker([-46.5952743,-67.9582257], popup=popup7,icon=folium.Icon(color='pink')).add_to(mapote)
@@ -69,7 +69,19 @@ folium.Marker([-46.4952743,-67.2582257], popup=popup9,icon=folium.Icon(icon='fir
 popup10 = folium.Popup(iframe_dos, max_width=2650)
 folium.Marker([-46.2952743,-67.1582257], popup=popup10,icon=folium.Icon(icon='tint')).add_to(mapote)
 
+# GeoJson
+# folium.GeoJson(
+#     'Camp.geojson',
+#     name='punto_geojson',
+# ).add_to(mapote)
 
+popup11 = folium.Popup(iframe_dos, max_width=2650)
+folium.GeoJson('AreAprox.geojson',name='area_geojson',popup=popup11).add_to(mapote)
+
+folium.LayerControl().add_to(mapote)
+
+# Add the option to allow the user to add markers on the fly (al tiro!)
+mapote.add_child(folium.ClickForMarker())
 
 # We get a map in a Popup. Not really useful, but powerful.
 mapote.save(os.path.join('./', 'pt_tres_popups.html'))
